@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Perfil"
+        android:icon="@android:drawable/ic_menu_myplaces" />
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Configuración"
+        android:icon="@android:drawable/ic_menu_manage" />
+    <item
+        android:id="@+id/nav_transacciones"
+        android:title="Transacciones"
+        android:icon="@android:drawable/ic_menu_agenda" />
+    <item
+        android:id="@+id/nav_informes"
+        android:title="Informes"
+        android:icon="@android:drawable/ic_menu_info_details" />
+    <item
+        android:id="@+id/nav_categorias"
+        android:title="Categorías"
+        android:icon="@android:drawable/ic_menu_sort_by_size" />
+    <item
+        android:id="@+id/nav_accounts"
+        android:title="Cuentas"
+        android:icon="@android:drawable/ic_menu_manage" />
+    <item
+        android:id="@+id/nav_deudores"
+        android:title="Deudores"
+        android:icon="@android:drawable/ic_menu_call" />
+    <item
+        android:id="@+id/nav_acreedores"
+        android:title="Acreedores"
+        android:icon="@android:drawable/ic_menu_send" />
+    <item
+        android:id="@+id/nav_productos"
+        android:title="Productos"
+        android:icon="@android:drawable/ic_menu_gallery" />
+    <item
+        android:id="@+id/nav_tarifa_pago"
+        android:title="Tarifa de pago"
+        android:icon="@android:drawable/ic_menu_save" />
+</menu> 

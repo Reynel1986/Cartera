@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewNombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del producto"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textViewStockProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stock: 0 unidades"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewPrecioCompraProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio de compra: $0.00"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <TextView
+            android:id="@+id/textViewPrecioVentaProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio de venta: $0.00"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewCantidadTotalComprada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantidad total comprada: 0 unidades"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textViewInversionTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inversión total: $0.00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textViewInversionExistente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inversión existente: $0.00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textViewGananciaPotencial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ganancia potencial: $0.00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textViewTotalVendido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total vendido: $0.00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Historial de ventas"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewVentas"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar nueva venta"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextCantidadVenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad a vender"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/editTextPrecioVenta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Precio de venta (opcional)"
+                android:inputType="numberDecimal"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/buttonCalculatorVenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧮"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/editTextFechaVenta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Fecha de venta"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/buttonDatePickerVenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextNotaVenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota (opcional)"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonRegistrarVenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar venta"/>
+
+        <Button
+            android:id="@+id/buttonIncrementarStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incrementar stock"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/buttonEliminarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar producto"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/buttonReiniciarContadores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar contadores (nuevo ciclo)"
+            android:background="@android:color/holo_orange_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/buttonVerCortes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver historial de cortes"
+            android:background="@android:color/holo_purple"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView> 

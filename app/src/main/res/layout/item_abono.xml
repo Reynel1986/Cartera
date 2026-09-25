@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewAbonoMonto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abono: $0.00"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/textViewAbonoFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textSize="13sp"
+            android:textColor="@color/colorTextSecondary"/>
+        <TextView
+            android:id="@+id/textViewAbonoNota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota"
+            android:textSize="13sp"
+            android:textColor="@color/colorTextSecondary"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/buttonDeleteAbono"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="Eliminar abono"
+        android:tint="@color/colorError"
+        android:focusable="false"
+        android:clickable="true"/>
+
+</LinearLayout> 
