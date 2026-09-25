@@ -36,6 +36,7 @@ Cartera es una aplicación móvil desarrollada en Kotlin que permite llevar un c
 - **Autenticación:** Sistema de login y registro.
 - **Perfil:** Gestión de información de usuario.
 - **Configuración:** Personalización de preferencias.
+- **Backup y restauración:** Exportación e importación de datos.
 
 ## 🛠️ Stack Tecnológico
 
