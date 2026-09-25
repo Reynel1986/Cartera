@@ -1,8 +1,8 @@
-# Cartera - Android Showcase
+# Cartera - Android App
 
 Aplicación Android para gestión personal de finanzas, inventario y control de deudas/acreedores.
 
-> **Nota:** El código fuente completo es privado. Este repositorio muestra la arquitectura, las características, capturas de pantalla y fragmentos de código representativos.
+> **Nota:** Este repositorio contiene el código fuente completo de la aplicación Cartera. Puedes explorar toda la arquitectura y el código directamente en las carpetas del proyecto.
 
 ## 📋 Descripción
 
@@ -52,3 +52,70 @@ Cartera es una aplicación móvil desarrollada en Kotlin que permite llevar un c
   - Lifecycle Runtime KTX
 
 ## 📱 Estructura del Proyecto
+app/src/main/java/cu/rge/cartera/
+├── data/
+│ ├── model/ # Modelos de datos (Entity)
+│ ├── dao/ # Data Access Objects
+│ └── DataManager.kt # Gestor central de datos
+├── navigation/ # Sistema de navegación
+├── *Activity.kt # Actividades de la aplicación
+└── *Adapter.kt # Adaptadores para listas
+
+### Modelos de Datos Principales
+
+- **Account:** Cuentas bancarias con moneda y saldo.
+- **Transaction:** Registro de movimientos financieros.
+- **Producto:** Items de inventario con precios.
+- **PersonaRelacionada:** Deudores y acreedores.
+- **TarifaPago:** Configuración de tarifas.
+- **Category:** Categorías de transacciones.
+- **CurrencyRate:** Tasas de cambio de moneda.
+- **User:** Usuarios del sistema.
+
+## 📸 Capturas de Pantalla
+
+*   **Iniciar Sesión:** ![Login](screenshots/01_login.png)
+*   **Dashboard Principal:** ![Dashboard](screenshots/02_dashboard.png)
+*   **Menú de Navegación:** ![Menú](screenshots/03_menu.png)
+*   **Configuración y Backup:** ![Configuración](screenshots/04_configuracion.png)
+
+## 🚀 Instalación
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/Reynel1986/Cartera.git
+
+    Abrir el proyecto en Android Studio.
+
+    Sincronizar dependencias de Gradle.
+
+    Ejecutar en un dispositivo físico o emulador (API 24+).
+
+🔐 Seguridad
+
+    Base de datos local (Room) con persistencia segura.
+
+    Sistema de autenticación de usuarios.
+
+    Cifrado de credenciales.
+
+🗺️ Roadmap
+
+Posibles mejoras futuras:
+
+    Exportación de datos a CSV/PDF.
+
+    Sincronización en la nube.
+
+    Gráficos y estadísticas avanzadas.
+
+    Notificaciones de pagos pendientes.
+
+    Soporte para transacciones recurrentes automáticas.
+
+👨‍💻 Autor
+
+Desarrollado por Reynel González Estévez (RGE) para gestión personal de cuentas y finanzas.
+📄 Licencia
+
+Este proyecto está disponible como muestra de portafolio. Todos los derechos reservados.
