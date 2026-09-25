@@ -97,7 +97,7 @@ Las dependencias se gestionan a través de Gradle con Version Catalog. Consulta 
 Este proyecto es de uso personal para gestión de finanzas.
 
 ## 👤 Autor
-
+Reynel González Estévez (RGE)
 Desarrollado para gestión personal de cuentas y finanzas.
 
 ## 🗺️ Roadmap
